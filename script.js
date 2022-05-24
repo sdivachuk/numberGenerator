@@ -14,17 +14,25 @@ function generatePassword() {
     alert("total length must be between 8 and 128 characters");
     return generatePassword();
   }
-    var useLowercase = confirm("would you like to use lowercase letters?");
-    var useUppercase = confirm("Would you like to use uppercase letters?");
-    var useNumbers = confirm("Would you like to use numbers?");
-    var useSpecial = confirm("would you like to use special characters?");
-  
-  
-    
- 
-  
+  var characterPool = "";
+  var useLowercase = confirm("would you like to use lowercase letters?");
+  var useUppercase = confirm("Would you like to use uppercase letters?");
+  var useNumbers = confirm("Would you like to use numbers?");
+  var useSpecial = confirm("would you like to use special characters?");
 
-  // var characterPool = "";
+  if(useLowercase === true){
+    characterPool += lowercase;
+  }
+  if(useUppercase === true){
+    characterPool += uppercase;
+  }
+  if(useSpecial === true){
+    characterPool += special;
+  }
+  if(useNumbers === true){
+    characterPool += numbers;
+  }
+  console.log(characterPool)
 
   // if (useLowercase && !useUppercase && !useNumbers && !useSpecial){
   //   characterPool += lowercase;
