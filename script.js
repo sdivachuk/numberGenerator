@@ -8,12 +8,15 @@ function generatePassword() {
   var special = "#$%&()*+,-./:;<=>?";
   var uppercase = lowercase.toUpperCase();
 
-  var input = parseInt(prompt("Choose a lenght between 8 and 128"));
-
-  if (input >= 8 && input <= 128) {
-    // GOOD CODE GOES HERE
+  var numberOfCharacters = parseInt(prompt("Choose a length between 8 and 128"));
+  var useLowercase = prompt("would you like yo use lowercase letters, y or n?");
+  var useUppercase = prompt("Would you like to use uppercase letters, y or n?");
+  var useSpecial = prompt("would you like to use special characters, y or n?");
+  
+  if (numberOfCharacters >= 8 && numberOfCharacters <= 128) {
+    init();
   } else {
-    alert("NOT COOL");
+    alert("total length must be between 8 and 128 characters");
   }
 
   return "";
