@@ -29,7 +29,7 @@ function generatePassword() {
   }
   if(useUppercase === true){
     characterPool += uppercase;
-  }
+  } 
   if(useSpecial === true){
     characterPool += special;
   }
@@ -46,11 +46,11 @@ function generatePassword() {
   for (var i = 0; i < numberOfCharacters; i++){
 
     compiledPassword += characterPool.charAt(
-      Math.floor(Math.random() * numberOfCharacters));
+      Math.floor(Math.random() * characterPool.length));
   }
   console.log(characterPool);
   console.log(numberOfCharacters);
-  console.log(compiledPassword);
+  
   return compiledPassword;
 }
 
