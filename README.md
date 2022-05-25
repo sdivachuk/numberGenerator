@@ -17,7 +17,7 @@ Made sure user input number between 8 and 128 or they get a message telling them
 Also made sure user chose at least one option or they got message telling them they need to choose at least one character type.
 
 ## Visuals
-(passwordGeneratorWorking.PNG)
+![image of password](./passwordGeneratorWorking.PNG)
 
 ## Resources
 - [Live Site](https://sdivachuk.github.io/numberGenerator/)
