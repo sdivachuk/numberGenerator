@@ -32,13 +32,19 @@ function generatePassword() {
   if(useNumbers === true){
     characterPool += numbers;
   }
-  console.log(characterPool)
+  if(!useLowercase && !useUppercase && !useNumbers && !useSpecial){
+    alert("You must select at least one type of character");
+    return generatePassword();
+  }
+  var compiledPassword = "";
 
-  // if (useLowercase && !useUppercase && !useNumbers && !useSpecial){
-  //   characterPool += lowercase;
-  // }else if()
+  for (var i = 0; i < numberOfCharacters; i++){
+    compiledPassword += characterPool.charAt(Math.floor(Math.random() * numberOfCharacters));
+  }
+  console.log(characterPool);
+  console.log(numberOfCharacters);
 
-  return "";
+  return compiledPassword;
 }
 
 // Write password to the #password input
