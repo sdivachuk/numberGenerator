@@ -39,7 +39,7 @@ function generatePassword() {
   var compiledPassword = "";
 
   for (var i = 0; i < numberOfCharacters; i++){
-    compiledPassword += characterPool.charAt(Math.floor(Math.random() * numberOfCharacters));
+    compiledPassword += characterPool(Math.floor(Math.random() * numberOfCharacters));
   }
   console.log(characterPool);
   console.log(numberOfCharacters);
