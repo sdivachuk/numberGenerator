@@ -48,8 +48,8 @@ function generatePassword() {
     compiledPassword += characterPool.charAt(
       Math.floor(Math.random() * characterPool.length));
   }
-  console.log(characterPool);
-  console.log(numberOfCharacters);
+  // console.log(characterPool);
+  // console.log(numberOfCharacters);
   
   return compiledPassword;
 }

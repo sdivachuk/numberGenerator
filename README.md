@@ -2,8 +2,8 @@
 
 ## Table of Contents
 - [Description](#description)
-- [Visuals](Visuals)
-- [Resources](Resources)
+- [Visuals](#Visuals)
+- [Resources](#Resources)
 
 ## Description
 
@@ -17,7 +17,8 @@ Made sure user input number between 8 and 128 or they get a message telling them
 Also made sure user chose at least one option or they got message telling them they need to choose at least one character type.
 
 ## Visuals
-![Horiseon](./assets/images/Horiseon%20_%20Search%20Engine%20Optimization.png)
+(passwordGeneratorWorking.PNG)
+
 ## Resources
 - [Live Site](https://sdivachuk.github.io/numberGenerator/)
 - [Repository](https://github.com/sdivachuk/numberGenerator)
